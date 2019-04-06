@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>Jiali Cheng&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Compilation and InstallationPython2升级到Python3无法导入包：1find . -name \*.pyc -delete Magic Number Error详见 https://stackoverflow.com/questions/514371/whats-the-bad-magic-number-error Conda安装Rconda create -n">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Jiali Cheng&#39;s Blog">
+<meta property="og:url" content="http://chengjiali.com/configurations/Unix Configuration.html">
+<meta property="og:site_name" content="Jiali Cheng&#39;s Blog">
+<meta property="og:description" content="Compilation and InstallationPython2升级到Python3无法导入包：1find . -name \*.pyc -delete Magic Number Error详见 https://stackoverflow.com/questions/514371/whats-the-bad-magic-number-error Conda安装Rconda create -n">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-05-21T17:20:37.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Jiali Cheng&#39;s Blog">
+<meta name="twitter:description" content="Compilation and InstallationPython2升级到Python3无法导入包：1find . -name \*.pyc -delete Magic Number Error详见 https://stackoverflow.com/questions/514371/whats-the-bad-magic-number-error Conda安装Rconda create -n">
+  
+    <link rel="alternate" href="/atom.xml" title="Jiali Cheng&#39;s Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Jiali Cheng&#39;s Blog</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/test-page">Deep Learning</a>
+        
+          <a class="main-nav-link" href="/courses">Courses</a>
+        
+          <a class="main-nav-link" href="/resume">Resume</a>
+        
+          <a class="main-nav-link" href="/projects">Projects</a>
+        
+          <a class="main-nav-link" href="/configurations">Config</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://chengjiali.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/configurations/Unix Configuration.html" class="article-date">
+  <time datetime="2018-05-21T17:20:37.000Z" itemprop="datePublished">2018-05-21</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="Compilation-and-Installation"><a href="#Compilation-and-Installation" class="headerlink" title="Compilation and Installation"></a>Compilation and Installation</h1><h4 id="Python2升级到Python3无法导入包："><a href="#Python2升级到Python3无法导入包：" class="headerlink" title="Python2升级到Python3无法导入包："></a>Python2升级到Python3无法导入包：</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">find . -name \*.pyc -delete</span><br></pre></td></tr></table></figure>
+<p>Magic Number Error详见 <a href="https://stackoverflow.com/questions/514371/whats-the-bad-magic-number-error" target="_blank" rel="noopener">https://stackoverflow.com/questions/514371/whats-the-bad-magic-number-error</a></p>
+<h4 id="Conda安装R"><a href="#Conda安装R" class="headerlink" title="Conda安装R"></a>Conda安装R</h4><p>conda create -n r -c r r-essentials<br>conda install -c intel tcl=8.6.4</p>
+<h4 id="源码安装软件："><a href="#源码安装软件：" class="headerlink" title="源码安装软件："></a>源码安装软件：</h4><ol>
+<li>wget获取源码</li>
+<li>解压 tar -zxvf mysql-5.5.28.tar.gz</li>
+<li>Configure and Make <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">./configure --prefix=path_to_install</span><br><span class="line">make -j (-j为并行编译)</span><br><span class="line">make install</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h4 id="编译安装tcl-tk"><a href="#编译安装tcl-tk" class="headerlink" title="编译安装tcl/tk"></a>编译安装tcl/tk</h4><p><a href="http://blog.csdn.net/cryhelyxx/article/details/22514871" target="_blank" rel="noopener">http://blog.csdn.net/cryhelyxx/article/details/22514871</a><br>–with-tcl=      –prefix=<br><a href="https://docs.python.org/3/library/tkinter.html" target="_blank" rel="noopener">https://docs.python.org/3/library/tkinter.html</a><br><a href="http://blog.csdn.net/cryhelyxx/article/details/22514871" target="_blank" rel="noopener">http://blog.csdn.net/cryhelyxx/article/details/22514871</a><br><a href="http://www.tcl.tk/doc/howto/compile.html" target="_blank" rel="noopener">http://www.tcl.tk/doc/howto/compile.html</a></p>
+<h1 id="All"><a href="#All" class="headerlink" title="All"></a>All</h1><h4 id="tsv-data格式转换为csv"><a href="#tsv-data格式转换为csv" class="headerlink" title="tsv/data格式转换为csv"></a>tsv/data格式转换为csv</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sed <span class="string">'s/ /,/g'</span> test.tsv &gt; test.csv</span><br></pre></td></tr></table></figure>
+<h1 id="Network"><a href="#Network" class="headerlink" title="Network"></a>Network</h1><h4 id="Change-MAC-Address"><a href="#Change-MAC-Address" class="headerlink" title="Change MAC Address"></a>Change MAC Address</h4><p>sudo ifconfig en0 MAC ADDR</p>
+<h4 id="SSH配置："><a href="#SSH配置：" class="headerlink" title="SSH配置："></a>SSH配置：</h4><ol>
+<li>在服务器上安装server    </li>
+<li>在client上生成秘钥</li>
+<li>将client秘钥存储在服务器文件内</li>
+<li>重启服务器</li>
+</ol>
+<p>如果无法以root用户登录:  </p>
+<ol>
+<li>更改root用户密码 sudo passwd root  </li>
+<li><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo vim /etc/ssh/sshd_conf  </span><br><span class="line">PermitRootLogin 修改为yes  </span><br><span class="line">PubkeyAuthentication yes修改为no</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h4 id="Curl-for-HTTP2-support"><a href="#Curl-for-HTTP2-support" class="headerlink" title="Curl for HTTP2 support:"></a>Curl for HTTP2 support:</h4><p>需要重新编译curl<br>需要nghttp2和任意一种SSL支持<br><a href="https://curl.haxx.se/docs/http2.html" target="_blank" rel="noopener">https://curl.haxx.se/docs/http2.html</a><br>./configure –prefix=/Users/CJL-RMBP/curl-http2-support/ –with-nghttp2=/usr/local/Cellar/nghttp2/1.30.0 –with-ssl=/usr/local/Cellar/openssl/1.0.2j</p>
+<h1 id="Mac-Specific"><a href="#Mac-Specific" class="headerlink" title="Mac Specific"></a>Mac Specific</h1><h4 id="Mac-安装ARM交叉编译环境-ARM-Cross-Compiling-Environment"><a href="#Mac-安装ARM交叉编译环境-ARM-Cross-Compiling-Environment" class="headerlink" title="Mac 安装ARM交叉编译环境 ARM Cross Compiling Environment"></a>Mac 安装ARM交叉编译环境 ARM Cross Compiling Environment</h4><p>brew search arm<br>brew install caskroom/cask/gcc-arm-embedded<br><a href="https://www.macports.org/install.php" target="_blank" rel="noopener">https://www.macports.org/install.php</a></p>
+<h4 id="Mac-R语言依赖库"><a href="#Mac-R语言依赖库" class="headerlink" title="Mac R语言依赖库"></a>Mac R语言依赖库</h4><p>brew install udunits</p>
+<p>GDAL: GIS data translation library<br>export PATH=/Library/Frameworks/GDAL.framework/Programs:$PATH<br><a href="http://www.kyngchaos.com/software:frameworks" target="_blank" rel="noopener">http://www.kyngchaos.com/software:frameworks</a><br><a href="https://zhuanlan.zhihu.com/p/29417899" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/29417899</a></p>
+<p>install.packages(“lazy”)<br>install.packages(“rgdal”)<br>install.packages(“tigris”)<br>install.packages(c(“choroplethr”, “choroplethrMaps”))`</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://chengjiali.com/configurations/Unix Configuration.html" data-id="cju5kracb0000afwybh4dtc8p" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/05/17/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 Jiali Cheng<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/test-page" class="mobile-nav-link">Deep Learning</a>
+  
+    <a href="/courses" class="mobile-nav-link">Courses</a>
+  
+    <a href="/resume" class="mobile-nav-link">Resume</a>
+  
+    <a href="/projects" class="mobile-nav-link">Projects</a>
+  
+    <a href="/configurations" class="mobile-nav-link">Config</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
