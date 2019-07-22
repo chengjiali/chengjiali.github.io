@@ -94,17 +94,17 @@
 
 
 
-  <meta name="description" content="CheckpointModifying attributes of a submitted job using scontrol FAQSLURM FAQ">
+  <meta name="description" content="SLURM workload managerSLURM stands for Simple Linux Utility Resource Manager.  SLURM commandsSubmit a jobSince SLURM manages the resource on the cluster, we have to ask for resources (compute nodes, m">
 <meta property="og:type" content="website">
 <meta property="og:title" content="SLURM">
 <meta property="og:url" content="http://chengjiali.com/HPC/SLURM.html">
 <meta property="og:site_name" content="Jiali Cheng&#39;s Blog">
-<meta property="og:description" content="CheckpointModifying attributes of a submitted job using scontrol FAQSLURM FAQ">
+<meta property="og:description" content="SLURM workload managerSLURM stands for Simple Linux Utility Resource Manager.  SLURM commandsSubmit a jobSince SLURM manages the resource on the cluster, we have to ask for resources (compute nodes, m">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-07-09T18:43:56.000Z">
+<meta property="og:updated_time" content="2019-07-22T22:00:46.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SLURM">
-<meta name="twitter:description" content="CheckpointModifying attributes of a submitted job using scontrol FAQSLURM FAQ">
+<meta name="twitter:description" content="SLURM workload managerSLURM stands for Simple Linux Utility Resource Manager.  SLURM commandsSubmit a jobSince SLURM manages the resource on the cluster, we have to ask for resources (compute nodes, m">
 
 
 
@@ -480,7 +480,51 @@
       <div class="post-body">
         
         
-          <h2 id="Checkpoint"><a href="#Checkpoint" class="headerlink" title="Checkpoint"></a>Checkpoint</h2><p><a href="https://www.tchpc.tcd.ie/node/854" target="_blank" rel="noopener">Modifying attributes of a submitted job using scontrol</a></p>
+          <h2 id="SLURM-workload-manager"><a href="#SLURM-workload-manager" class="headerlink" title="SLURM workload manager"></a>SLURM workload manager</h2><p>SLURM stands for Simple Linux Utility Resource Manager. </p>
+<h2 id="SLURM-commands"><a href="#SLURM-commands" class="headerlink" title="SLURM commands"></a>SLURM commands</h2><h2 id="Submit-a-job"><a href="#Submit-a-job" class="headerlink" title="Submit a job"></a>Submit a job</h2><p>Since SLURM manages the resource on the cluster, we have to ask for resources (compute nodes, memory, etc.) from SLURM. You will get the resources from the compute nodes for your job. (In this way you will not end up running computational jobs on the login nodes.) Also we have to tell SLURM what job / command need to be executed. </p>
+<p>There are two ways to run a SLURM job:</p>
+<ul>
+<li>Interactive mode </li>
+<li>Batch mode. </li>
+</ul>
+<h4 id="Interactive-mode"><a href="#Interactive-mode" class="headerlink" title="Interactive mode"></a>Interactive mode</h4><p>“srun” is the command to submit an interactive job for execution. During the interactive job, the ssh connection between you and the cluster has to be maintained. The usage is srun [parameter] [job] </p>
+<p>The parapeters controls what resources are allocated and how the tasks are distributed across the nodes. Then plus the job / command to execute. </p>
+<p>e.g.<br>Start a job on your local machine:<br><figure class="highlight plain"><figcaption><span>hostname         ## hostname is a Linux command to print the hostname of the machine ```</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">With srun:   </span><br><span class="line">``` $ srun hostname ```  </span><br><span class="line">OR   </span><br><span class="line">``` $ srun -N 2 --ntasks-per-node=3 --cpus-per-task=4</span><br></pre></td></tr></table></figure></p>
+<p>The way the srun works is: </p>
+<ul>
+<li>Allocate resources </li>
+<li>Log onto the resources </li>
+<li>Run the job </li>
+<li>Log out  </li>
+</ul>
+<p>!! If you want to allocate resources and do not run any job, please do not use salloc. Instead use<br><figure class="highlight plain"><figcaption><span>--pty</span><a href="/bin/bash">```</a></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">You can also add other parameters.</span><br><span class="line">!!</span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">#### Batch mode </span><br><span class="line">&quot;sbatch&quot; is the command to submit a batch job for later execution. </span><br><span class="line"></span><br><span class="line">In batch mode, you have to create a configuration file which contains the resources you want and the job to run. The resources is specified by a bunch of parameters (same with srun parameters) starting with &quot;#SBATCH&quot;. The commands are shell commands. Here is a sample batch job script:</span><br></pre></td></tr></table></figure></p>
+<p>#!/bin/bash - Specify the executor of the script </p>
+<h2 id="Normal-configurations"><a href="#Normal-configurations" class="headerlink" title="Normal configurations"></a>Normal configurations</h2><p>#SBATCH –job-name=test </p>
+<p>#SBATCH –output=test.out </p>
+<p>#SBATCH –error=test.err </p>
+<p>#SBATCH –time=04:00:00 </p>
+<h2 id="Parallel-resource-configs"><a href="#Parallel-resource-configs" class="headerlink" title="Parallel resource configs"></a>Parallel resource configs</h2><p>#SBATCH -p general </p>
+<p>#SBATCH -N 2 </p>
+<p>#SBATCH -n 2  </p>
+<p>#SBATCH –ntasks-per-node=2 </p>
+<p>#SBATCH –cpus-per-task=4 </p>
+<p>#SBATCH –mem-per-cpu=10G </p>
+<p>#SBATCH –mem=10G </p>
+<p>#SBATCH –gres=gpu:1 </p>
+<h2 id="Constraint-configs"><a href="#Constraint-configs" class="headerlink" title="Constraint configs"></a>Constraint configs</h2><p>#SBATCH –nodelist=c1[234-238] </p>
+<p>#SBATCH –exclude=c1234 </p>
+<p>#SBATCH –constraint=“<a href="mailto:E5-2690v3@2.60GHz" target="_blank" rel="noopener">E5-2690v3@2.60GHz</a>” </p>
+<p>#SBATCH –gres=gpu:k20:1        ## Specify GPU preference </p>
+<h2 id="Dependencies-configs"><a href="#Dependencies-configs" class="headerlink" title="Dependencies configs"></a>Dependencies configs</h2><p>#SBATCH –dependency=after:jobid </p>
+<p>#SBATCH –dependency=afterok:jobid </p>
+<p>#SBATCH –dependency=afternotok:jobid </p>
+<h2 id="The-jobs-you-want-to-run-e-g"><a href="#The-jobs-you-want-to-run-e-g" class="headerlink" title="The jobs you want to run, e.g."></a>The jobs you want to run, e.g.</h2><p>module load openmpi/3.1.1<br>work=/home/$USER/computaion<br>cd $work<br>mpirun -p 10 ./start_simulation</p>
+<h2 id="You-can-also-put-other-commands"><a href="#You-can-also-put-other-commands" class="headerlink" title="You can also put other commands"></a>You can also put other commands</h2><p><code>`</code></p>
+<p>So this configuration file can be seen as a wrapper of the “srun [parameter] [job]” usage. </p>
+<p>For a detailed description of parameters of srun and sbatch, please check with </p>
+<p>$ srun –help </p>
+<h2 id="Monitor-jobs"><a href="#Monitor-jobs" class="headerlink" title="Monitor jobs"></a>Monitor jobs</h2><h2 id="Job-array"><a href="#Job-array" class="headerlink" title="Job array"></a>Job array</h2><h2 id="Checkpoint"><a href="#Checkpoint" class="headerlink" title="Checkpoint"></a>Checkpoint</h2><p>TBA</p>
+<p><a href="https://www.tchpc.tcd.ie/node/854" target="_blank" rel="noopener">Modifying attributes of a submitted job using scontrol</a></p>
 <h2 id="FAQ"><a href="#FAQ" class="headerlink" title="FAQ"></a>FAQ</h2><p><a href="https://slurm.schedmd.com/faq.html" target="_blank" rel="noopener">SLURM FAQ</a></p>
 
         
@@ -591,7 +635,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Checkpoint"><span class="nav-number">1.</span> <span class="nav-text">Checkpoint</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#FAQ"><span class="nav-number">2.</span> <span class="nav-text">FAQ</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#SLURM-workload-manager"><span class="nav-number">1.</span> <span class="nav-text">SLURM workload manager</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SLURM-commands"><span class="nav-number">2.</span> <span class="nav-text">SLURM commands</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Submit-a-job"><span class="nav-number">3.</span> <span class="nav-text">Submit a job</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Interactive-mode"><span class="nav-number">3.0.1.</span> <span class="nav-text">Interactive mode</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Normal-configurations"><span class="nav-number">4.</span> <span class="nav-text">Normal configurations</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Parallel-resource-configs"><span class="nav-number">5.</span> <span class="nav-text">Parallel resource configs</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Constraint-configs"><span class="nav-number">6.</span> <span class="nav-text">Constraint configs</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Dependencies-configs"><span class="nav-number">7.</span> <span class="nav-text">Dependencies configs</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#The-jobs-you-want-to-run-e-g"><span class="nav-number">8.</span> <span class="nav-text">The jobs you want to run, e.g.</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#You-can-also-put-other-commands"><span class="nav-number">9.</span> <span class="nav-text">You can also put other commands</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Monitor-jobs"><span class="nav-number">10.</span> <span class="nav-text">Monitor jobs</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Job-array"><span class="nav-number">11.</span> <span class="nav-text">Job array</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Checkpoint"><span class="nav-number">12.</span> <span class="nav-text">Checkpoint</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#FAQ"><span class="nav-number">13.</span> <span class="nav-text">FAQ</span></a></li></ol></div>
             
 
           </div>
