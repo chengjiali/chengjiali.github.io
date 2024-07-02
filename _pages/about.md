@@ -18,7 +18,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-**Bio**: I am a PhD student from UMass Lowell in CS, advised by Prof. [Hadi Amiri](https://www.cs.uml.edu/~hadi/index.html). Prior to that, I worked at Harvard Medical School advised by Prof. [Marinka Zitnik](https://scholar.google.com/citations?user=YtUDgPIAAAAJ). Prior to that, I interned at THUNLP advised by Dr. [Yusheng Su](https://yushengsu-thu.github.io/) and Prof. [Zhiyuan Liu](https://scholar.google.com/citations?user=dT0v5u0AAAAJ&hl=en). 
+**Bio**: I am a PhD student from UMass Lowell, advised by Prof. [Hadi Amiri](https://www.cs.uml.edu/~hadi/index.html). Previously, I worked with Prof. [Marinka Zitnik](https://scholar.google.com/citations?user=YtUDgPIAAAAJ) from [Harvard University](https://hms.harvard.edu/). Prior to that, I interned at THUNLP advised by Prof. [Zhiyuan Liu](https://scholar.google.com/citations?user=dT0v5u0AAAAJ&hl=en) and Dr. [Yusheng Su](https://yushengsu-thu.github.io/).
 
 
 **Research**: My research goal is to build Trustworthy and Efficient AI systems. My research interests span across multiple areas of AI
@@ -28,5 +28,4 @@ social: true # includes social icons at the bottom of the page
   - Privacy
 
 - AI4Science, leveraging AI tools to facilitate scientific discovery
-
 - Multimodal AI
