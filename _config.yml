@@ -160,6 +160,7 @@ newsletter:
 
 collections:
   news:
+    scrollable: true
     defaults:
       layout: post
     output: true
@@ -169,7 +170,7 @@ collections:
     permalink: /projects/:path/
 
 # news_limit: 5
-news_scrollable: true
+# news_scrollable: true
 
 announcements:
   enabled: true
