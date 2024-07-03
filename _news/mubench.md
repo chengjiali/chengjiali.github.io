@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: news
 date: 2024-6-25 08:00:00-0400
 inline: true
 related_posts: false
