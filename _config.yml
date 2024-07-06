@@ -160,7 +160,6 @@ newsletter:
 
 collections:
   news:
-    scrollable: true
     defaults:
       layout: post
     output: true
@@ -168,9 +167,6 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
-
-# news_scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-# news_limit: # leave blank to include all the news in the `_news` folder
 
 announcements:
   enabled: true
