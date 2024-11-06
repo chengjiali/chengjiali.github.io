@@ -17,6 +17,9 @@ news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
+**I'm looking for internship opportunities. If you are hiring or would like to collaborate, please feel free to contact me.**
+
+**I'm attending EMNLP'24 @ Miama in person. Looking forward to meet new and old friends!**
 
 **Bio**: I am a PhD student from UMass Lowell, advised by Prof. [Hadi Amiri](https://www.cs.uml.edu/~hadi/index.html). Previously, I worked with Prof. [Marinka Zitnik](https://scholar.google.com/citations?user=YtUDgPIAAAAJ) from [Harvard University](https://hms.harvard.edu/). Prior to that, I interned at THUNLP advised by Prof. [Zhiyuan Liu](https://scholar.google.com/citations?user=dT0v5u0AAAAJ&hl=en) and Dr. [Yusheng Su](https://yushengsu-thu.github.io/).
 
