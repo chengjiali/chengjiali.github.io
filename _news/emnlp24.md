@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-🔥🔥FairFlow is accepted to EMNLP 2024 Main! FairFlow effectively mitigates bias / spurious correlation for a wide range of NLU tasks. Stay tuned for the paper.
+🔥🔥[FairFlow](https://aclanthology.org/2024.emnlp-main.1225/) is accepted to EMNLP 2024 Main! FairFlow effectively mitigates bias / spurious correlation for a wide range of NLU tasks.
