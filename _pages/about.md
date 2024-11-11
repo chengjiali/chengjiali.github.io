@@ -34,5 +34,3 @@ social: true # includes social icons at the bottom of the page
 - Multimodal AI
 
 
-
-<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=n&d=fdAWKUdvlTndIrslbSghZ5y5sspOWNGCKgKOiIJ4Cog'></script>
