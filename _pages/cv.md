@@ -1,6 +1,6 @@
 ---
 layout: cv
-permalink: /cv/
+permalink: /assets/pdf/CV__Jiali_Cheng.pdf
 title: CV
 nav: true
 nav_order: 5
