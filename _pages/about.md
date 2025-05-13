@@ -19,13 +19,13 @@ social: true # includes social icons at the bottom of the page
 ---
 
 
-**My advisor is always looking for highly motivated PhD students and interns (onsite / remote). Please free to contact me.**
+<!-- **My advisor is always looking for highly motivated PhD students and interns (onsite / remote). Please free to contact me.**
 
 
 **I am always open to collaboration, whether you are:**
 - an experienced researcher seeking someone to handle coding tasks, 
 - a peer looking for discussions / collaborations on projects, or
-- a beginner who might benefit from my guidance where I can provide one-on-one discussions.
+- a beginner who might benefit from my guidance where I can provide one-on-one discussions. -->
 
 
 
@@ -37,12 +37,14 @@ I'll be interning at Amazon Summer 2025.
 **Research**: My research goal is to build Trustworthy and Efficient AI systems. My research interests span across multiple areas of AI
 
 - Trustworthy AI
-  - Bias and Fairness
-  - Privacy & Unlearning
+  - Bias & Fairness
+  - Adversarial Robustness
+  - Attack & Defense
+  - Machine Unlearning
   - Interpretability
 
-- AI Agents and Tool-Augmented LLMs
+- Tool Learning, expanding the abilities of AI models with external tools
 - AI4Science, leveraging AI tools to facilitate scientific discovery
-- Benchmark & Evaluation
+- Benchmark & Evaluation, designing novel benchmarks and evaluation protocols
 
 

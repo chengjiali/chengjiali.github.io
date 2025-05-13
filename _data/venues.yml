@@ -13,6 +13,14 @@
   url: ""
   color: "#0099ff"
 
+"Benchmark":
+  url: ""
+  color: "#33cc33"
+
+"Evaluation":
+  url: ""
+  color: "#33cc33"
+
 "AI4Science":
   url: ""
   color: "#33cc33"
