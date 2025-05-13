@@ -7,6 +7,15 @@ nav: true
 nav_order: 6
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+## Course 
 
-Organize your courses by years, topics, or universities, however you like!
+**Computing I \& II Lab (C Programming)**, TA, UMass Lowell, 2023, 2024
+
+**Introduction to HPC Cluster with SLURM**, Instructor, Northeastern University, Tutorial every other week, 2018 - 2019
+
+**Introduction to Python**, Instructor, Lecturer, Northeastern University, Tutorial every other week, 2018 - 2019
+
+
+## Talks
+
+**Graph Machine Unlearning**, Guest Lecture, Advanced Social Computing Course @ UMass Lowell, Spring 2023
