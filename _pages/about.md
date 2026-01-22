@@ -19,13 +19,13 @@ social: true # includes social icons at the bottom of the page
 ---
 
 
-<!-- **My advisor is always looking for highly motivated PhD students and interns (onsite / remote). Please free to contact me.**
+**My advisor is always looking for highly motivated PhD students and interns (onsite / remote). Please free to contact me.**
 
 
 **I am always open to collaboration, whether you are:**
 - an experienced researcher seeking someone to handle coding tasks, 
 - a peer looking for discussions / collaborations on projects, or
-- a beginner who might benefit from my guidance where I can provide one-on-one discussions. -->
+- a beginner who might benefit from my guidance where I can provide one-on-one discussions.
 
 
 
