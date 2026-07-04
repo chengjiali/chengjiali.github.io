@@ -19,32 +19,25 @@ social: true # includes social icons at the bottom of the page
 ---
 
 
-**My advisor is always looking for highly motivated PhD students and interns (onsite / remote). Please free to contact me.**
-
-
-**I am always open to collaboration, whether you are:**
-- an experienced researcher seeking someone to handle coding tasks, 
-- a peer looking for discussions / collaborations on projects, or
-- a beginner who might benefit from my guidance where I can provide one-on-one discussions.
+**I am always open to collaboration, whether you are a seniro / junior / beginner researcher.**
 
 
 
-**Bio**: I am a PhD student from UMass Lowell, advised by Prof. [Hadi Amiri](https://www.cs.uml.edu/~hadi/index.html). Previously, I worked with Prof. [Marinka Zitnik](https://scholar.google.com/citations?user=YtUDgPIAAAAJ) from [Harvard University](https://hms.harvard.edu/). Prior to that, I interned at THUNLP advised by Prof. [Zhiyuan Liu](https://scholar.google.com/citations?user=dT0v5u0AAAAJ&hl=en) and Dr. [Yusheng Su](https://yushengsu-thu.github.io/).
+**Bio**: I am a PhD student from UMass Lowell, advised by Prof. [Hadi Amiri](https://www.cs.uml.edu/~hadi/index.html). Previously, I worked as
+- Applied Scientist Intern, Summer 2026 & 2025, advised by Dr. [Oleg Rokhlenko](https://scholar.google.co.uk/citations?user=rgKKn-kAAAAJ), Dr. [Xingzhi Guo](https://scholar.google.com/citations?user=-xZmkAQAAAAJ&hl=en) and [Anjishnu Kumar](https://scholar.google.com/citations?user=_40_1hIAAAAJ&hl=en)
+- RA at [Harvar Medical Schoom](https://hms.harvard.edu/), Advised by Prof. [Marinka Zitnik](https://scholar.google.com/citations?user=YtUDgPIAAAAJ)
+- RA at [THUNLP], advised by Prof. [Zhiyuan Liu](https://scholar.google.com/citations?user=dT0v5u0AAAAJ&hl=en), Dr. [Yusheng Su](https://yushengsu-thu.github.io/)
 
-I'll be interning at Amazon Summer 2025.
 
 
-**Research**: My research goal is to build Trustworthy and Efficient AI systems. My research interests span across multiple areas of AI
+**Research**: My research goal is to build **Trustworthy AI** systems and their applications. My work focuses on three main directions:
 
-- Trustworthy AI
-  - Bias & Fairness
-  - Adversarial Robustness
-  - Attack & Defense
-  - Machine Unlearning
-  - Interpretability
+- **Security and Privacy.** I study how to make AI systems more secure, robust, and interpretable.
 
-- Tool Learning, expanding the abilities of AI models with external tools
-- AI4Science, leveraging AI tools to facilitate scientific discovery
-- Benchmark & Evaluation, designing novel benchmarks and evaluation protocols
+- **Knowledge Conflicts in Agents.** I study how conflicts arise when agents interact with environment, and how to resolve them.
 
+- **AI for Science.** I apply AI methods to scientific applications, including medical, healthcare and scientific domains.
+
+
+**I am looking for full-time industry / academic opportunities. Please feel free to contact me if you think I'm a good fit.**
 
