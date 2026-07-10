@@ -32,9 +32,12 @@ I am a PhD student from UMass Lowell, advised by Prof. [Hadi Amiri](https://www.
 
 ## Research
 
-My research aims to build trustworthy AI systems and advance their real-world applications. My work focuses on three main directions: **Trustworthy AI systems** and **Advance their applications**. My work focuses on three main directions:
+My research aims to build **Trustworthy AI systems** and **Advance their applications**. My work focuses on three main directions:
 
-- **Security and Privacy.** I study how to make AI systems more secure ([GNNDDelete](https://arxiv.org/abs/2302.13406), [MultiDelete](https://arxiv.org/abs/2311.12047), [ToolDelete](https://arxiv.org/abs/2502.01083), [Unlearning Benchmark](https://arxiv.org/abs/2406.14796)), robust ([FairFlow](https://arxiv.org/abs/2503.17632), [EqualizeIR](https://arxiv.org/abs/2504.07115)), and interpretable ([Mode Connectivity](https://arxiv.org/abs/2504.06407), [Linguistic Blind Spots](https://arxiv.org/abs/2503.19260)).
+- **Security and Privacy.** I study how to make AI systems more
+  - Secure ([GNNDDelete](https://arxiv.org/abs/2302.13406), [MultiDelete](https://arxiv.org/abs/2311.12047), [ToolDelete](https://arxiv.org/abs/2502.01083), [Unlearning Benchmark](https://arxiv.org/abs/2406.14796))
+  - Robust ([FairFlow](https://arxiv.org/abs/2503.17632), [EqualizeIR](https://arxiv.org/abs/2504.07115))
+  - Interpretable ([Mode Connectivity](https://arxiv.org/abs/2504.06407), [Unlearning Difficulty](https://arxiv.org/abs/2601.09624)).
 
 - **Knowledge Conflicts.** I study how conflicts arise when agents interact with environment, and how to resolve them ([Tool-Memory Conflict](https://arxiv.org/abs/2601.09760)).
 
