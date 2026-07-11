@@ -24,8 +24,8 @@ social: true # includes social icons at the bottom of the page
 
 
 I am a PhD student from UMass Lowell, advised by Prof. [Hadi Amiri](https://www.cs.uml.edu/~hadi/index.html). Previously
-- Applied Scientist Intern, Summer 2026 & 2025, advised by Dr. [Oleg Rokhlenko](https://scholar.google.co.uk/citations?user=rgKKn-kAAAAJ), Dr. [Xingzhi Guo](https://scholar.google.com/citations?user=-xZmkAQAAAAJ&hl=en) and [Anjishnu Kumar](https://scholar.google.com/citations?user=_40_1hIAAAAJ&hl=en)
-- RA at [Harvard Medical School](https://hms.harvard.edu/), Advised by Prof. [Marinka Zitnik](https://scholar.google.com/citations?user=YtUDgPIAAAAJ)
+- Applied Scientist Intern, Summer 2026 & 2025, advised by Dr. [Oleg Rokhlenko](https://scholar.google.co.uk/citations?user=rgKKn-kAAAAJ), Dr. [Xingzhi Guo](https://scholar.google.com/citations?user=-xZmkAQAAAAJ&hl=en), [Anjishnu Kumar](https://scholar.google.com/citations?user=_40_1hIAAAAJ&hl=en)
+- RA at [Harvard Medical School](https://hms.harvard.edu/), advised by Prof. [Marinka Zitnik](https://scholar.google.com/citations?user=YtUDgPIAAAAJ)
 - RA at [THUNLP](https://github.com/THUNLP), advised by Prof. [Zhiyuan Liu](https://scholar.google.com/citations?user=dT0v5u0AAAAJ&hl=en), Dr. [Yusheng Su](https://yushengsu-thu.github.io/)
 
 
