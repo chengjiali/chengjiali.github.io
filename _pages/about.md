@@ -34,14 +34,19 @@ I am a PhD student from UMass Lowell, advised by Prof. [Hadi Amiri](https://www.
 
 My research aims to build **Trustworthy AI Systems** and advance **AI Applications**, focusing on three main directions:
 
-- **Trustworthy and Controllable AI.** I design methods to make AI more trustworthy and controllable.
-  - Knowledge Control & Targeted Unlearning ([GNNDDelete](https://arxiv.org/abs/2302.13406), [MultiDelete](https://arxiv.org/abs/2311.12047), [ToolDelete](https://arxiv.org/abs/2502.01083), [Unlearning Benchmark](https://arxiv.org/abs/2406.14796))
-  - Robustness ([FairFlow](https://arxiv.org/abs/2503.17632), [Robustness under Distillation](https://arxiv.org/abs/2510.26038))
-  - Interpretability ([Mode Connectivity in Unlearning](https://arxiv.org/abs/2504.06407), [Circuit-Guided Unlearning Difficulty](https://arxiv.org/abs/2601.09624)).
+- **Trustworthy of Controllable AI.** 
+<!-- I design methods to make AI more trustworthy and controllable. -->
+  - **Knowledge Control.** (Targeted Unlearning in [GNN](https://arxiv.org/abs/2302.13406), [VLM](https://arxiv.org/abs/2311.12047), [Tool LLM](https://arxiv.org/abs/2502.01083), [GenRec](https://arxiv.org/abs/2606.07688), [Cross-Modal Benchmark](https://arxiv.org/abs/2406.14796))
+  - **Knowledge Conflicts.** I study how conflicts arise when agents interact with environment, and how to resolve them ([Tool-Memory Conflict](https://arxiv.org/abs/2601.09760)).
+  - **Robustness** ([FairFlow](https://arxiv.org/abs/2503.17632), [Robustness under Distillation](https://arxiv.org/abs/2510.26038))
+  - **Interpretability** ([Mode Connectivity in Unlearning](https://arxiv.org/abs/2504.06407), [Circuit-Guided Unlearning Difficulty](https://arxiv.org/abs/2601.09624))
 
-- **Knowledge Conflicts.** I study how conflicts arise when agents interact with environment, and how to resolve them ([Tool-Memory Conflict](https://arxiv.org/abs/2601.09760)).
 
-- **AI for Science.** I apply AI methods to scientific applications, including medical, healthcare and scientific domains ([MedDec](https://arxiv.org/abs/2408.12980), [Demential Detection](https://arxiv.org/abs/2606.18571)).
+- **AI for Science and Applications.** 
+<!-- I apply AI methods to scientific applications, including medical, healthcare and scientific domains ([MedDec](https://arxiv.org/abs/2408.12980), [Demential Detection](https://arxiv.org/abs/2606.18571)). -->
+  - **Medical and Healthcare.** ([MedDec](https://arxiv.org/abs/2408.12980), [Demential Detection](https://arxiv.org/abs/2606.18571))
+  - **Psychology.** ([Human Emotions](https://www.cell.com/iscience/fulltext/S2589-0042(24)02626-9))
+
 
 
 
