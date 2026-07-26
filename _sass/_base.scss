@@ -367,6 +367,26 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
+// News Spacing
+
+.news {
+  table {
+    margin-bottom: 1rem;
+  }
+
+  th,
+  td {
+    padding-top: 0.15rem;
+    padding-bottom: 0.15rem;
+    vertical-align: top;
+  }
+
+  th {
+    width: 20%;
+    white-space: normal;
+  }
+}
+
 // Social (bottom)
 
 .social {
